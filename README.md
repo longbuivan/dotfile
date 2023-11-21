@@ -1,10 +1,11 @@
 # How to set up Development Environment as DataDev
 
-Known as Data Tech-Stack for building OpenData platforms and applications.
+    Known as Data Tech-Stack for building OpenData platforms and applications.
 
-Try to use this setup for your projects, doing custom configuration as your application requires.
+    Try to use this setup for your projects, doing custom configuration as your application requires.
 
 ## Contents
+
 - [General Settings](#general-settings)
 - [Data Applications](#data-applications)
 - [Data Platforms](#data-platforms)
@@ -13,9 +14,11 @@ Try to use this setup for your projects, doing custom configuration as your appl
 
 ## General Settings
 
--As Developer, spending budge of time to mimic from internet and custom your personalized-
+*As Developer, spending budge of time to mimic from internet and custom your personalized*
 
-- MacOS Package Management `homebrew` 
+![Development](assets/GitCli.png)
+
+### MacOS Package Management `homebrew`
 
 For Windows or Linux users, you will need to install the following package management as your OS distro: choco, pacman, apt,...
 
@@ -25,7 +28,7 @@ export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebre
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-- Python Package Management
+### Python Package Management
 
 Most of Data Dev are installed and built using Python. PLEASE USE `VENV` and `pip` (virtual environment for different projects) instead global settings.
 
@@ -47,9 +50,9 @@ cat requirements.txt # Show list of libraries
 pip install -r requirements.txt
 ```
 
-- Terminal
+### Terminal
 
-Using Oh my zsh!! , build comfortable Terminal Settings because you might work a lot with CLI.
+Using --Oh my zsh!!-- , build comfortable Terminal Settings because you might work a lot with CLI.
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -58,16 +61,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 Change theme settings by:
 > echo "ZSH_THEME="agnoster"" >> ~/.zshrc
 
-Or, visit https://github.com/ohmyzsh/ohmyzsh/wiki/Theme
+Or, visit <https://github.com/ohmyzsh/ohmyzsh/wiki/Theme>
 
 **Recommend to use iTerm2**
 
-Easily intsall Iterm2 by this `brew install iterm2`
+Easily install iTerm2 by this `brew install iTerm2`
 
-Plugins:
+#### Plugins
 
 1. Install plugins
-
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
@@ -79,7 +81,8 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZS
 
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
 ```
-2. Change config
+
+1. Change config
 
 ```bash
  plugins=(
@@ -90,76 +93,78 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
   zsh-autocomplete
  )
 ```
-3. `source ~/.zshrc`
 
+3. Run `source ~/.zshrc`
 
-- Browser
+### Browser
 
 Lightweight, Secure, Private with [Min Browser](https://minbrowser.org/)
 
-- Container Setup for Development
+### Container Setup for Development
 
 Navigate to `./containers/` and run `docker-compose up`
 
+![Container Setup for Data Engineering](/assets/ContainersSetup.png)
+
+*Don't kill a machine*
+
 ## Data Applications
 
--When you're joining a project for building Data SaaS-
+*When you're joining a project for building Data SaaS*
 
 ### 1. Core Backend
 
-- Flask: [Flask]
-- Structured Data: [PostgreSQL]
-
--[Python3.9.0]
+- Flask [Flask](https://flask.palletsprojects.com/en/3.0.x/)
+- Structured Data & Simplified Data warehouse [PostgreSQL](https://www.postgresql.org/)
+- Data Programming [Python3.9.0](https://www.python.org)
 
 ### 2. Frontend
 
-- [Node.js 16]
-- [JavaScript]
-- [React]
+- [Node.js 16](https://nodejs.org/en/) or upper
+- [JavaScript](https://www.typescriptlang.org/)
+- Web Framework/Library: [React](https://reactjs.org/)
 
 ### 3. Additional Tools
 
-- DataOps: [Dbt]
-- CI/CD: [GitHub Actions]
-- Containerization: [Docker, K8s]
-- [Docker Compose]
+- DataOps: [Dbt](https://www.getdbt.com/)
+- CI/CD: [GitHub Actions](https://github.com/features/actions)
+- Containerization: [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/)
 
 ## Data Platforms
 
--When you're joining a project for building Data PaaS-
+*When you're joining a project for building Data PaaS*
 
 ### 1. Storage
 
-- File object storage [MinIO]
-- Non-Structured Data: [MongoDB]
+- File object storage - Datalake (using for partition): [MinIO](https://min.io/)
+- Non-Structured Data: [MongoDB](https://www.mongodb.com/)
 
 ### 2. Processing
 
-- Streaming and Batching: [Flink]
-- Big Data Processing: [Spark]or [Arrow]
+- Streaming and Batching: [Flink](https://www.flink.apache.org)
+- Big Data Processing: [Spark](https://spark.apache.org/) or [Arrow](https://arrow.apache.org/docs/index.html)
 
 ### 3. Warehousing
 
-Free Regiter and do mockup, install CLI
+Free Register and do mockup, install CLI
 
-- [Databricks]
-- [Snowflake]
+- [Databricks](https://www.databricks.com/)
+- [Snowflake](https://www.snowflake.com/)
 
 ### 4. Programming
 
-- Programming OOP & Functions [Scala]
-- Backend & Infra [Go]
+- Programming OOP & Functions [Scala](https://scala-lang.org/)
+- Backend & Infra [Go](https://go.dev/)
 - Fundamentals Data Engineering and Software Development
 
 ### 5. Protocol
 
-- Sync [Rest API]
-- ASync [Message Queue]
+- Sync [Rest API](https://restfulapi.net/)
+- ASync [Message Queue](https://kafka.apache.org/)
 
 ### 6. Semantic
 
-- Modeling [Power BI] or SuperSet
+- Modeling [Power BI](https://powerbi.microsoft.com/en-us/) or SuperSet
 
 ### 7. Cloud Providers
 
@@ -167,22 +172,24 @@ Any of cloud providers [AWS] , Azure, GCP
 
 ### 8. Infrastructure
 
-- Infrastructure as Code [Terraform]
-- Monitoring [Grafana]
-- Logging [Prometheus] or ELK Stack
+- Infrastructure as Code [Terraform](https://www.terraform.io/)
+- Monitoring [Grafana](https://grafana.com/)
+- Logging [Prometheus](https://prometheus.io/docs/introduction/overview/) or [ELK](https://www.elastic.co/elastic-stack/) Stack
 
 ## Development
 
 Supporting Development Tools
 
-- VSCode [VSCode]
-- Dbeaver [Dbeaver]
-- Postman [Postman]
-- MongoDB Compass [MongoDb]
+- VSCode [VSCode](https://code.visualstudio.com/)
+- Dbeaver [Dbeaver](https://dbeaver.com/docs/dbeaver/)
+- Postman [Postman](https://www.postman.com/)
+- MongoDBCompass [MongDb](https://www.mongodb.com/products/tools/compass)
 - CLI
-- OrbStack (Only for Mac users)
-- Debugging
+- [OrbStack](https://orbstack.dev/) (Only for Mac users)
+- Debugging, Breakpoints, logging
 - Tree Viewer [$ brew install tree]
+
+![Monitoring Platforms](/assets/MonitoringInfra.png)
 
 ## Project Structure
 
@@ -198,3 +205,6 @@ Supporting Development Tools
 ├── servers : contains data servers
 └── venv-stringx : py virtual environment
 ```
+
+----------------------------------------------------------------
+*I created this setting for my development setup, for contribution please create PR and update your preference*
