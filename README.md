@@ -32,6 +32,8 @@ export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebre
 
 Most of Data Dev are installed and built using Python. PLEASE USE `VENV` and `pip` (virtual environment for different projects) instead global settings.
 
+This is an example of libs I mostly use in Data Project
+
 ```bash
 python -m pip install --user venv
 python -m venv --help
@@ -69,7 +71,10 @@ Easily install iTerm2 by this `brew install iTerm2`
 
 #### Plugins
 
+In order to make your CLI more faster, check these out:
+
 1. Install plugins
+
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
@@ -100,7 +105,7 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
 
 Lightweight, Secure, Private with [Min Browser](https://minbrowser.org/)
 
-### KeyCastr
+### KeyCastr (Optional)
 
 To display the keyboard on the screen
 
@@ -114,7 +119,7 @@ Navigate to `./containers/` and run `docker-compose up`
 
 ![Container Setup for Data Engineering](/assets/ContainersSetup.png)
 
-*Don't kill a machine*
+Please remember to utilize your resources, *Don't kill a machine*
 
 ## Data Applications
 
