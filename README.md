@@ -14,7 +14,7 @@
 
 ## General Settings
 
-*As Developer, spending budge of time to mimic from internet and custom your personalized*
+*As Developer, spending a lot of time to mimic from internet and custom your personalized*
 
 ![Development](assets/GitCli.png)
 
