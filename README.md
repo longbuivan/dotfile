@@ -100,6 +100,14 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
 
 Lightweight, Secure, Private with [Min Browser](https://minbrowser.org/)
 
+### KeyCastr
+
+To display the keyboard on the screen
+
+```bash
+brew install keycastr --cask
+```
+
 ### Container Setup for Development
 
 Navigate to `./containers/` and run `docker-compose up`
