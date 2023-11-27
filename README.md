@@ -136,6 +136,7 @@ Please remember to utilize your resources, *Don't kill a machine*
 - [Node.js 16](https://nodejs.org/en/) or upper
 - [JavaScript](https://www.typescriptlang.org/)
 - Web Framework/Library: [React](https://reactjs.org/)
+- Rapidly build modern websites [Tailwind CSS](https://tailwindcss.com/)
 
 ### 3. Additional Tools
 
