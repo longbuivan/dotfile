@@ -23,10 +23,9 @@
 For Windows or Linux users, you will need to install the following package management as your OS distro: choco, pacman, apt,...
 
 ```bash
-export HOMEBREW_BREW_GIT_REMOTE="..."  # put your Git mirror of Homebrew/brew here
-export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebrew-core here
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
+Notes: Check `python3 --version` on your machine, if it doesn't have yet ?! Run `brew install python3`
 
 ### Python Package Management
 
@@ -35,8 +34,8 @@ Most of Data Dev are installed and built using Python. PLEASE USE `VENV` and `pi
 This is an example of libs I mostly use in Data Project
 
 ```bash
-python -m pip install --user venv
-python -m venv --help
+python3 -m pip install --user venv
+python3 -m venv --help
 
 # cd to working directory, and install requirements.txt
 cat requirements.txt # Show list of libraries
@@ -49,7 +48,7 @@ cat requirements.txt # Show list of libraries
 # boto3
 # snowflake-connector-python
 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ### Terminal
