@@ -1,0 +1,8 @@
+Flask
+pymongo
+flask_cors
+kafka-python
+pandas
+pyarrow
+boto3
+snowflake-connector-python
