@@ -12,6 +12,10 @@
 - [Development](#development)
 - [Project Structure](#project-structure)
 
+## Tutorial and Demo
+
+Watch this video to get hands-on [https://youtu.be/2nKRHoWemDQ](https://youtu.be/2nKRHoWemDQ)
+
 ## General Settings
 
 *As Developer, spending a lot of time to mimic from internet and custom your personalized*
