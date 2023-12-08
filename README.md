@@ -1,8 +1,8 @@
 # How to set up Development Environment as DataDev
 
-    Known as Data Tech-Stack for building OpenData platforms and applications.
+Known as Data Tech-Stack for building OpenData platforms and applications.
 
-    Try to use this setup for your projects, doing custom configuration as your application requires.
+Try to use this setup for your projects, doing custom configuration as your application requires.
 
 ## Contents
 
@@ -43,18 +43,13 @@ This is an example of libs I mostly use in Data Project
 python3 -m pip install --user venv
 python3 -m venv --help
 
-# cd to working directory, and install requirements.txt
-cat requirements.txt # Show list of libraries
-# Flask
-# pymongo
-# flask_cors
-# kafka-python
-# pandas
-# pyarrow
-# boto3
-# snowflake-connector-python
-
 pip3 install -r requirements.txt
+```
+
+### Git
+
+```bash
+brew install git --cask
 ```
 
 ### Terminal
@@ -211,6 +206,8 @@ Supporting Development Tools
 ![Monitoring Platforms](/assets/MonitoringInfra.png)
 
 ## Project Structure
+
+Create the folders as you need them
 
 ```bash
 .
