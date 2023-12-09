@@ -221,6 +221,9 @@ Create the folders as you need them
 ├── servers : contains data servers
 └── venv-stringx : py virtual environment
 ```
+If you want to get understanding what data engineering is and trying to achieve fundatmental knowledge about data engineering, check this Youtube Series:
+
+(https://youtu.be/5DEFgEBAuTA?si=KymSgjY-foD8q5I3)[https://youtu.be/5DEFgEBAuTA?si=KymSgjY-foD8q5I3]
 
 ----------------------------------------------------------------
 *I created this setting for my development setup, for contribution please create PR and update your preference*
