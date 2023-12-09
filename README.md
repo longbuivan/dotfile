@@ -17,6 +17,7 @@ Try to use this setup for your projects, doing custom configuration as your appl
 Watch this video to get hands-on [https://youtu.be/2nKRHoWemDQ](https://youtu.be/2nKRHoWemDQ)
 
 ![MacbookM1](assets/MacbookM1Setup.png)
+
 ## General Settings
 
 *As Developer, spending a lot of time to mimic from internet and custom your personalized*
@@ -64,7 +65,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 Change theme settings by:
 > echo "ZSH_THEME="agnoster"" >> ~/.zshrc
 
-Or, visit <https://github.com/ohmyzsh/ohmyzsh/wiki/Theme>
+Or visit this to change whatever you want <https://github.com/ohmyzsh/ohmyzsh/wiki/Theme>
 
 **Recommend to use iTerm2**
 
@@ -79,7 +80,6 @@ In order to make your CLI more faster, check these out:
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
@@ -100,7 +100,7 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
  )
 ```
 
-3. Run `source ~/.zshrc`
+3. Run `source ~/.zshrc` to activate change
 
 ### Browser
 
@@ -144,6 +144,7 @@ Please remember to utilize your resources, *Don't kill a machine*
 - DataOps: [Dbt](https://www.getdbt.com/)
 - CI/CD: [GitHub Actions](https://github.com/features/actions)
 - Containerization: [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/)
+- K8s: [Kubenetes](https://kubernetes.io/)
 
 ## Data Platforms
 
