@@ -16,6 +16,7 @@ Try to use this setup for your projects, doing custom configuration as your appl
 
 Watch this video to get hands-on [https://youtu.be/2nKRHoWemDQ](https://youtu.be/2nKRHoWemDQ)
 
+![MacbookM1](assets/MacbookM1Setup.png)
 ## General Settings
 
 *As Developer, spending a lot of time to mimic from internet and custom your personalized*
