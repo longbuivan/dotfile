@@ -1,0 +1,9 @@
+FROM postgres:latest
+
+ENV POSTGRES_USER=root
+ENV POSTGRES_PASSWORD=IamAdmin12
+ENV POSTGRES_DB=foundation_dw
+
+COPY ./database/init.sql /docker-entrypoint-initdb.d/init.sql
+
+EXPOSE 5432

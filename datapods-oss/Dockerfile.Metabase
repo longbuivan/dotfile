@@ -1,0 +1,2 @@
+FROM metabase/metabase:latest
+

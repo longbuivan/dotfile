@@ -11,6 +11,7 @@ Try to use this setup for your projects, doing custom configuration as your appl
 - [Data Platforms](#data-platforms)
 - [Development](#development)
 - [Project Structure](#project-structure)
+- [DataPods-OSS](#data-pods-oss)
 
 ## Tutorial and Demo
 
@@ -226,6 +227,19 @@ Create the folders as you need them
 If you want to get understanding what data engineering is and trying to achieve fundatmental knowledge about data engineering, check this Youtube Series:
 
 [https://youtu.be/5DEFgEBAuTA?si=KymSgjY-foD8q5I3](https://youtu.be/5DEFgEBAuTA?si=KymSgjY-foD8q5I3)
+
+
+## DataPods OSS
+
+<sub>If you have been spent late night with data ingestion and data migration</sub>
+
+- This project data project includes lightweight k8s yaml files for creating the development environment, testing environment, Proof of Concept, Proof of Service or even support for **Small Business**.
+
+- With DataPods [DPs],  maximize the number of times to provision services for creating data transformations.
+
+- Supported Scalability and Resiliency by features of Kubernetes.
+
+- Check out [DataPods](https://datapods-oss.vercel.app/)
 
 ----------------------------------------------------------------
 *I created this setting for my development setup, for contribution please create PR and update your preference*
