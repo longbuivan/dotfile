@@ -29,7 +29,7 @@ Watch this video to get hands-on [https://youtu.be/2nKRHoWemDQ](https://youtu.be
 
 For Windows or Linux users, you will need to install the following package management as your OS distro: choco, pacman, apt,...
 
-Normaly I remove all unusual application on Dock/Toolbar/Desktop. Make it lean.
+Normally, I remove all unusual application on Dock/Toolbar/Desktop. Make it lean.
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
