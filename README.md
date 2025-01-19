@@ -123,6 +123,17 @@ Navigate to `./containers/` and run `docker-compose up`
 
 Please remember to utilize your resources, *Don't kill a machine*
 
+
+### Devbox
+
+- Update on 2025-01-19, change to use devboxfor developement. [devbox](https://github.com/jetify-com/devbox)
+
+### Deployment
+
+- Vercel
+- Railway
+
+
 ## Data Applications
 
 *When you're joining a project for building Data SaaS*
