@@ -4,6 +4,11 @@ Known as Data Tech-Stack for building OpenData platforms and applications.
 
 Try to use this setup for your projects, doing custom configuration as your application requires.
 
+## Changelog
+
+- 2025-03-01: Change to use Vim for writing, coding; and tmux for splitting terminal.
+![tmux-setup](assets/tmux-setup.png)
+
 ## Contents
 
 - [General Settings](#general-settings)
