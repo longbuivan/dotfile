@@ -14,8 +14,8 @@ set showcmd                   " Show command in bottom bar
 set wildmenu                  " Visual autocomplete for command menu
 
 " Writing-specific settings
-set textwidth=80              " Line wrap at 80 characters
-set colorcolumn=+1            " Highlight column after textwidth
+set textwidth=112              " Line wrap at 80 characters
+"set colorcolumn=+1           " Highlight column after textwidth
 set spell                     " Enable spell checking
 set spelllang=en_us           " Set spell check language
 
@@ -39,4 +39,35 @@ set backupdir=~/.vim/backup// " Store backups in specific directory
 set directory=~/.vim/swap//   " Store swap files in specific directory
 set undofile                  " Maintain undo history
 set undodir=~/.vim/undo//     " Store undo files in specific directory
+
+
+" Ensure vim-plug is set up
+call plug#begin('~/.vim/plugged')
+
+" Add coc.nvim plugin
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-markdown'
+
+call plug#end()
+
+" Optional: Enable line numbers, syntax highlighting, etc.
+set number
+syntax enable
+
+" Set up basic configuration for coc.nvim (optional)
+let g:coc_global_extensions = [
+	  \ 'coc-json',
+  \ 'coc-yaml',
+  \ 'coc-tsserver', 
+  \ 'coc-eslint', 
+  \ 'coc-prettier',
+  \ 'coc-snippets',
+  \ 'coc-pyright',
+  \ 'coc-markdownlint',
+  \ 'coc-spell-checker'
+  \ ]
+
+" Use tab for completion
+inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <silent><expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
