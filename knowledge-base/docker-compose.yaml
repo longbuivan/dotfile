@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: longddl_chroma
+    volumes:
+      - ./longddl-kb/chroma_data:/data
+    environment:
+      - IS_PERSISTENT=TRUE
+      - PERSIST_DIRECTORY=/data
+      - ANONYMIZED_TELEMETRY=FALSE
+    ports:
+      - "8000:8000"
+    restart: always
+
+  # Bare-metal C++ Engine replacing Ollama entirely
+  llama-server:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    container_name: longddl_llm
+    volumes:
+      - ./longddl-kb/models:/models:ro
+    # Adjust context size (-c) dynamically to save RAM (2048 is safe for 3B)
+    command: -m /models/Llama-3.2-3B-Instruct-Q4_K_M.gguf -c 8192 --host 0.0.0.0 --port 8080
+    ports:
+      - "8085:8080"
+    restart: always
+      #ollama:
+      #image: ollama/ollama:latest
+      #container_name: longddl_ollama
+      #volumes:
+      #- ollama_data:/root/.ollama
+      #ports:
+      #- "11434:11434"
+      #restart: unless-stopped
+
+  kb-sync:
+    build: ./sync-pipeline
+    container_name: longddl_sync_pipeline
+    restart: always
+    volumes:
+      - ./longddl-kb/sync-pipeline/sync_engine.py:/app/sync_engine.py:ro
+      - ./longddl-kb/app_state:/app/app_state:rw
+      - ./blog-brain/_brain:/app/blog-brain:ro
+      - ./blog-brain/_posts:/app/posts:ro
+      - ./utils/volume/:/app/utils/volume:ro
+      - ./de-book/private-book/src/:/app/de-book/private-book/src:ro
+      # - ./longddl-kb/cdc_state_catalog.db:/app/cdc_state_catalog.db:rw
+    depends_on:
+      - chromadb
+
+volumes:
+  chroma_data:
+  ollama_data:
+  open_webui_data:
